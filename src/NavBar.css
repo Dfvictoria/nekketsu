@@ -1,0 +1,19 @@
+#logo {
+    position:relative;
+    right:35rem;
+}
+
+.navBarLinks {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    font-weight: 600;
+    font-size:1.7rem;
+    color: white;
+}
+
+.navBarIcon {
+    position: relative;
+    bottom:0.15rem;
+    margin-right:1rem;
+    color:white;
+}
