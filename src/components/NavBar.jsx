@@ -1,4 +1,3 @@
-
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -11,24 +10,27 @@ function NavBar() {
       <br />
       <Navbar bg="black" variant="dark">
         <Container height="100">
-          <img
-            id="logo"
-            src="https://i.imgur.com/DQW40zJ.png"
-            width="150"
-            height="85"
-            className="d-inline-block align-top"
-            alt="Nekketsu logo"
-          />
+          <Nav.Link href='#home'>
+            <img
+              id="logo"
+              src="https://i.imgur.com/DQW40zJ.png"
+              width="150"
+              height="85"
+              className="d-inline-block align-top"
+              alt="Nekketsu logo"
+            />
+          </Nav.Link>
+
           <Nav className="me-auto">
-            <Nav.Link href="#home" className="navBarLinks">
+            <Nav.Link className="navBarLinks">
               <Icon.Journal className="navBarIcon" />
               COMICS
             </Nav.Link>
-            <Nav.Link href="#features" className="navBarLinks">
+            <Nav.Link className="navBarLinks">
               <Icon.Book className="navBarIcon" />
               LIBROS
             </Nav.Link>
-            <Nav.Link href="#pricing" className="navBarLinks">
+            <Nav.Link className="navBarLinks">
               <Icon.Columns className="navBarIcon" />
               MANGA
             </Nav.Link>
