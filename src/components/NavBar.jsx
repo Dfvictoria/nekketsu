@@ -3,6 +3,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "../NavBar.css";
 import * as Icon from "react-bootstrap-icons";
+import "bootstrap/dist/css/bootstrap.css";
+import CartWidget from "./CartWidget";
 
 function NavBar() {
   return (
@@ -10,7 +12,7 @@ function NavBar() {
       <br />
       <Navbar bg="black" variant="dark">
         <Container height="100">
-          <Nav.Link href='#home'>
+          <Nav.Link href="">
             <img
               id="logo"
               src="https://i.imgur.com/DQW40zJ.png"
@@ -21,7 +23,7 @@ function NavBar() {
             />
           </Nav.Link>
 
-          <Nav className="me-auto">
+          <Nav>
             <Nav.Link className="navBarLinks">
               <Icon.Journal className="navBarIcon" />
               COMICS
@@ -35,6 +37,9 @@ function NavBar() {
               MANGA
             </Nav.Link>
           </Nav>
+          <Nav.Link>
+            <CartWidget />
+          </Nav.Link>
         </Container>
       </Navbar>
     </>
