@@ -1,9 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "../NavBar.css";
+import  "../styles/NavBar.css"
 import * as Icon from "react-bootstrap-icons";
-import "bootstrap/dist/css/bootstrap.css";
 import CartWidget from "./CartWidget";
 
 function NavBar() {
@@ -12,7 +11,7 @@ function NavBar() {
       <br />
       <Navbar bg="black" variant="dark">
         <Container height="100">
-          <Nav.Link href="">
+          <Nav.Link href="localhost:3000">
             <img
               id="logo"
               src="https://i.imgur.com/DQW40zJ.png"
@@ -20,6 +19,7 @@ function NavBar() {
               height="85"
               className="d-inline-block align-top"
               alt="Nekketsu logo"
+              s
             />
           </Nav.Link>
 
