@@ -19,7 +19,7 @@ function NavBar() {
               height="85"
               className="d-inline-block align-top"
               alt="Nekketsu logo"
-              s
+              
             />
           </Nav.Link>
 
